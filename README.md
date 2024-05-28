@@ -4,7 +4,8 @@
 
 ### Visualização do Projeto
 Você pode visualizar o projeto em funcionamento através do link abaixo:
-###👉👀💻 - [Visualizar Projeto](https://gleaming-slime-minotaurasaurus.glitch.me/)
+
+👉👀💻 - [Visualizar Projeto](https://gleaming-slime-minotaurasaurus.glitch.me/)
 
 **Descrição:**
 Este projeto é um site criado para facilitar a coleta de briefings de clientes. Ele inclui um formulário onde os clientes podem fornecer informações detalhadas sobre seus projetos. Após o envio do formulário, os clientes são direcionados para uma página de recepção que confirma o recebimento das informações e fornece feedback adicional. Este site é útil para agências de marketing, designers, desenvolvedores e qualquer outro profissional que precise coletar dados estruturados de clientes para iniciar um projeto.
