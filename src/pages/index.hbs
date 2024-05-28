@@ -1,0 +1,303 @@
+<html lang="en">
+
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QUESTIONÁRIO Desenvolvimento DE MARCAS</title>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <style>
+      .menu { position: fixed; display: flex; justify-content: center;
+      align-items: center; width: 100%; /* height: 30px; */ background-color:
+      #5400c9; color: #fff; font-weight: bolder; top: 0; font-size: 24px;
+      padding: 10px; } body { font-family: 'Poppins', sans-serif;
+      background-color: #eee; margin: 0; padding: 0px; color: #333; } .container
+      { margin-top: 130px !important; margin-bottom: 80px !important; max-width:
+      600px; margin: auto; background: white; padding: 20px; box-shadow: 0 0
+      10px rgba(0, 0, 0, 0.1); border-radius: 10px; box-shadow: #000 } h2 {
+      color: #000; text-align: center; font-size: 35px; } .question {
+      margin-bottom: 20px; } label { display: block; margin: 10px 0; }
+      .question_checkbox label { display: inline-block; /* ou simplesmente
+      remover essa linha */ } input[type="text"], textarea { width: 100%;
+      padding: 10px; margin: 5px 0 20px 0; border: 1px solid #ddd; box-sizing:
+      border-box; } .submit-button { background-color: #5400c9; color: white;
+      padding: 15px 20px; border: none; cursor: pointer; width: 100%; font-size:
+      16px; font-weight: bo; margin-top: 10px; border-radius: 10px; /* bordas
+      arredondadas */ transition: background-color 0.3s ease; /* transição suave
+      de cor */ } .submit-button:hover, .submit-button:focus { background-color:
+      #4900b0; /* escurecer a cor ao passar o mouse */ }
+    </style>
+  </head>
+  <header>
+    <div class="menu">
+      <div>felipe</div>
+      <!-- <div><svg width="41" height="42" viewBox="0 0 2152 2295" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M706.542 760.113C1198.29 567.878 1235.99 173.273 1193.38 0C1535.96 287.699 2067.71 914.097 1454 1118.1C840.298 1322.11 867.181 1700.04 957.335 1863.5C219.708 1775.23 91.8531 1000.41 706.542 760.113Z"
+                    fill="white" />
+                <path
+                    d="M1031.1 1863.5C998.314 1693.5 1037 1326.03 1454 1216.18C1856.55 1110.14 1827.13 806.685 1756.77 653.429C1754.21 648.059 1751.64 642.753 1749.05 637.514C1751.67 642.614 1754.25 647.925 1756.77 653.429C1954.03 1067 2075.78 1863.5 1031.1 1863.5Z"
+                    fill="white" />
+                <path
+                    d="M706.542 760.113C1198.29 567.878 1235.99 173.273 1193.38 0C1535.96 287.699 2067.71 914.097 1454 1118.1C840.298 1322.11 867.181 1700.04 957.335 1863.5C219.708 1775.23 91.8531 1000.41 706.542 760.113Z"
+                    fill="white" />
+                <path
+                    d="M1031.1 1863.5C998.314 1693.5 1037 1326.03 1454 1216.18C1856.55 1110.14 1827.13 806.685 1756.77 653.429C1754.21 648.059 1751.64 642.753 1749.05 637.514C1751.67 642.614 1754.25 647.925 1756.77 653.429C1954.03 1067 2075.78 1863.5 1031.1 1863.5Z"
+                    fill="white" />
+                <path
+                    d="M149.317 2187.05C159.629 2187.05 167.837 2186.85 173.94 2186.45C180.043 2185.84 184.673 2184.74 187.83 2183.13C190.987 2181.32 192.986 2178.91 193.828 2175.89C194.88 2172.87 195.407 2168.75 195.407 2163.52V2159.9C195.407 2154.87 194.88 2150.85 193.828 2147.83C192.986 2144.82 190.987 2142.51 187.83 2140.9C184.673 2139.09 180.043 2137.98 173.94 2137.58C167.837 2136.98 159.629 2136.67 149.317 2136.67H75.1321V2187.05H149.317ZM271.486 2292.03H196.669V2273.02C196.669 2264.78 196.038 2258.24 194.775 2253.41C193.512 2248.39 190.671 2244.57 186.252 2241.95C181.832 2239.34 175.413 2237.63 166.995 2236.82C158.577 2236.02 147.213 2235.62 132.902 2235.62H75.1321V2292.03H0V2086.9H175.519C194.88 2086.9 210.77 2087.91 223.186 2089.92C235.603 2091.93 245.389 2095.45 252.545 2100.47C259.7 2105.3 264.646 2111.74 267.382 2119.78C270.118 2127.82 271.486 2137.88 271.486 2149.95V2157.19C271.486 2171.46 268.855 2182.73 263.594 2190.97C258.543 2199.22 250.125 2205.35 238.339 2209.37V2210.28C244.863 2211.68 250.23 2213.49 254.439 2215.71C258.858 2217.72 262.331 2220.53 264.856 2224.15C267.382 2227.77 269.065 2232.4 269.907 2238.03C270.96 2243.46 271.486 2250.3 271.486 2258.54V2292.03Z"
+                    fill="white" />
+                <path
+                    d="M626.442 2292.03H545.628L526.371 2256.43H395.363L376.423 2292.03H296.555L418.092 2086.9H503.642L626.442 2292.03ZM500.801 2209.07L461.025 2135.17H459.762L420.618 2209.07H500.801Z"
+                    fill="white" />
+                <path
+                    d="M881.458 2222.95H729.615V2292.03H654.483V2086.9H888.719V2136.98H729.615V2175.59H881.458V2222.95Z"
+                    fill="white" />
+                <path d="M1158.3 2222.95H1006.45V2292.03H931.321V2086.9H1165.56V2136.98H1006.45V2175.59H1158.3V2222.95Z"
+                    fill="white" />
+                <path
+                    d="M1357.48 2187.05C1367.79 2187.05 1376 2186.85 1382.1 2186.45C1388.2 2185.84 1392.83 2184.74 1395.99 2183.13C1399.15 2181.32 1401.14 2178.91 1401.99 2175.89C1403.04 2172.87 1403.56 2168.75 1403.56 2163.52V2159.9C1403.56 2154.87 1403.04 2150.85 1401.99 2147.83C1401.14 2144.82 1399.15 2142.51 1395.99 2140.9C1392.83 2139.09 1388.2 2137.98 1382.1 2137.58C1376 2136.98 1367.79 2136.67 1357.48 2136.67H1283.29V2187.05H1357.48ZM1479.64 2292.03H1404.83V2273.02C1404.83 2264.78 1404.2 2258.24 1402.93 2253.41C1401.67 2248.39 1398.83 2244.57 1394.41 2241.95C1389.99 2239.34 1383.57 2237.63 1375.15 2236.82C1366.74 2236.02 1355.37 2235.62 1341.06 2235.62H1283.29V2292.03H1208.16V2086.9H1383.68C1403.04 2086.9 1418.93 2087.91 1431.34 2089.92C1443.76 2091.93 1453.55 2095.45 1460.7 2100.47C1467.86 2105.3 1472.8 2111.74 1475.54 2119.78C1478.28 2127.82 1479.64 2137.88 1479.64 2149.95V2157.19C1479.64 2171.46 1477.01 2182.73 1471.75 2190.97C1466.7 2199.22 1458.28 2205.35 1446.5 2209.37V2210.28C1453.02 2211.68 1458.39 2213.49 1462.6 2215.71C1467.02 2217.72 1470.49 2220.53 1473.01 2224.15C1475.54 2227.77 1477.22 2232.4 1478.07 2238.03C1479.12 2243.46 1479.64 2250.3 1479.64 2258.54V2292.03Z"
+                    fill="white" />
+                <path
+                    d="M1673.92 2294.44C1652.45 2294.44 1633.83 2293.94 1618.04 2292.93C1602.47 2292.13 1589.21 2290.42 1578.27 2287.8C1567.32 2285.19 1558.38 2281.57 1551.43 2276.94C1544.49 2272.12 1539.12 2265.88 1535.33 2258.24C1531.55 2250.6 1528.92 2241.35 1527.44 2230.49C1526.18 2219.63 1525.55 2206.76 1525.55 2191.88V2187.05C1525.55 2172.17 1526.18 2159.3 1527.44 2148.44C1528.92 2137.58 1531.55 2128.43 1535.33 2120.99C1539.12 2113.35 1544.49 2107.11 1551.43 2102.28C1558.38 2097.46 1567.32 2093.74 1578.27 2091.12C1589.21 2088.51 1602.47 2086.8 1618.04 2086C1633.83 2084.99 1652.45 2084.49 1673.92 2084.49H1683.7C1705.17 2084.49 1723.69 2084.99 1739.26 2086C1755.05 2086.8 1768.41 2088.51 1779.36 2091.12C1790.3 2093.74 1799.14 2097.46 1805.87 2102.28C1812.82 2107.11 1818.18 2113.35 1821.97 2120.99C1825.76 2128.43 1828.29 2137.58 1829.55 2148.44C1831.02 2159.3 1831.76 2172.17 1831.76 2187.05V2191.88C1831.76 2206.76 1831.02 2219.63 1829.55 2230.49C1828.29 2241.35 1825.76 2250.6 1821.97 2258.24C1818.18 2265.88 1812.82 2272.12 1805.87 2276.94C1799.14 2281.57 1790.3 2285.19 1779.36 2287.8C1768.41 2290.42 1755.05 2292.13 1739.26 2292.93C1723.69 2293.94 1705.17 2294.44 1683.7 2294.44H1673.92ZM1681.81 2239.84C1699.28 2239.84 1712.85 2239.44 1722.53 2238.63C1732.42 2237.63 1739.79 2235.41 1744.63 2232C1749.47 2228.58 1752.42 2223.65 1753.47 2217.22C1754.73 2210.58 1755.36 2201.53 1755.36 2190.07V2187.65C1755.36 2176.39 1754.73 2167.44 1753.47 2160.81C1752.42 2154.17 1749.47 2149.24 1744.63 2146.02C1739.79 2142.61 1732.42 2140.49 1722.53 2139.69C1712.85 2138.68 1699.28 2138.18 1681.81 2138.18H1676.13C1658.66 2138.18 1644.98 2138.68 1635.09 2139.69C1625.2 2140.49 1617.83 2142.61 1612.99 2146.02C1608.15 2149.24 1605.21 2154.17 1604.15 2160.81C1603.1 2167.44 1602.57 2176.39 1602.57 2187.65V2190.07C1602.57 2201.53 1603.1 2210.58 1604.15 2217.22C1605.21 2223.65 1608.15 2228.58 1612.99 2232C1617.83 2235.41 1625.2 2237.63 1635.09 2238.63C1644.98 2239.44 1658.66 2239.84 1676.13 2239.84H1681.81Z"
+                    fill="white" />
+                <path
+                    d="M2014.36 2294.44C1993.32 2294.44 1975.22 2294.04 1960.07 2293.23C1945.12 2292.63 1932.5 2291.42 1922.18 2289.61C1911.87 2287.8 1903.56 2285.39 1897.25 2282.37C1890.93 2279.36 1886.09 2275.64 1882.72 2271.21C1879.36 2266.59 1877.15 2261.26 1876.09 2255.22C1875.04 2248.99 1874.52 2241.75 1874.52 2233.5V2225.96H1950.6V2230.19C1950.6 2233.2 1951.23 2235.72 1952.49 2237.73C1953.75 2239.74 1956.38 2241.35 1960.38 2242.55C1964.59 2243.76 1970.59 2244.67 1978.38 2245.27C1986.16 2245.67 1996.47 2245.87 2009.31 2245.87H2018.15C2032.46 2245.87 2043.62 2245.67 2051.61 2245.27C2059.82 2244.67 2065.92 2243.76 2069.92 2242.55C2074.13 2241.35 2076.66 2239.74 2077.5 2237.73C2078.55 2235.52 2079.08 2232.9 2079.08 2229.88V2228.07C2079.08 2225.06 2078.45 2222.54 2077.18 2220.53C2076.13 2218.52 2073.4 2216.91 2068.98 2215.71C2064.56 2214.3 2057.93 2213.39 2049.09 2212.99C2040.46 2212.39 2028.57 2212.09 2013.42 2212.09C1992.79 2212.09 1975.01 2211.68 1960.07 2210.88C1945.12 2210.08 1932.6 2208.77 1922.5 2206.96C1912.4 2205.15 1904.3 2202.74 1898.19 2199.72C1892.09 2196.5 1887.35 2192.58 1883.99 2187.95C1880.83 2183.13 1878.73 2177.5 1877.67 2171.06C1876.62 2164.63 1876.09 2157.09 1876.09 2148.44V2144.82C1876.09 2133.36 1877.57 2123.8 1880.51 2116.16C1883.67 2108.32 1889.67 2102.08 1898.51 2097.46C1907.35 2092.83 1919.66 2089.51 1935.44 2087.5C1951.23 2085.49 1971.75 2084.49 1997 2084.49H2010.26C2030.46 2084.49 2047.83 2084.89 2062.35 2085.69C2076.87 2086.5 2089.07 2087.81 2098.97 2089.62C2109.07 2091.22 2117.06 2093.54 2122.96 2096.55C2129.06 2099.57 2133.69 2103.29 2136.85 2107.71C2140.21 2112.14 2142.42 2117.37 2143.48 2123.4C2144.53 2129.43 2145.06 2136.37 2145.06 2144.21V2149.04H2071.5V2146.63C2071.5 2144.01 2071.08 2141.8 2070.24 2139.99C2069.4 2138.18 2067.29 2136.67 2063.93 2135.47C2060.56 2134.26 2055.4 2133.36 2048.46 2132.75C2041.51 2132.15 2032.04 2131.85 2020.05 2131.85H2010.26C1996.16 2131.85 1985 2132.05 1976.8 2132.45C1968.8 2132.85 1962.7 2133.66 1958.49 2134.86C1954.49 2136.07 1951.96 2137.68 1950.91 2139.69C1949.86 2141.5 1949.33 2143.91 1949.33 2146.93V2148.74C1949.33 2151.76 1949.86 2154.17 1950.91 2155.98C1951.96 2157.79 1954.8 2159.3 1959.43 2160.5C1964.06 2161.51 1971.11 2162.21 1980.59 2162.62C1990.06 2163.02 2003.21 2163.22 2020.05 2163.22C2048.46 2163.22 2071.29 2164.22 2088.55 2166.24C2105.81 2168.05 2119.17 2171.36 2128.64 2176.19C2138.11 2180.82 2144.32 2187.15 2147.26 2195.19C2150.42 2203.24 2152 2213.49 2152 2225.96V2230.19C2152 2242.25 2150.42 2252.41 2147.26 2260.65C2144.32 2268.9 2138.22 2275.53 2128.96 2280.56C2119.91 2285.39 2107.07 2288.91 2090.44 2291.12C2073.82 2293.33 2051.93 2294.44 2024.78 2294.44H2014.36Z"
+                    fill="white" />
+            </svg>
+        </div> -->
+    </div>
+  </header>
+
+  <body>
+
+    <div class="container">
+      <h2>Questionário de Desenvolvimento de Marca</h2>
+      <br /><br />
+
+      <form>
+        <div class="question">
+          <label style="font-weight: bolder;" for="company-name">Nome</label>
+          <input type="text" id="company-name" name="company-name" />
+        </div>
+        <div class="question">
+          <label style="font-weight: bolder;" for="company-name">E-mail</label>
+          <input type="text" id="company-name" name="company-name" />
+        </div>
+        <div class="question">
+          <label for="company-name">1 - Qual é o nome exato da sua empresa ou
+            marca?</label>
+          <input type="text" id="company-name" name="company-name" />
+        </div>
+
+        <div class="question question_checkbox">
+          <label>2 - Como você descreveria a missão e os valores da sua empresa?</label><br
+          />
+          <input
+            type="checkbox"
+            id="inovacao"
+            name="mission-values"
+            value="inovacao"
+          />
+          <label for="inovacao"> Inovação</label>
+          <input
+            type="checkbox"
+            id="qualidade"
+            name="mission-values"
+            value="qualidade"
+          />
+          <label for="qualidade"> Qualidade</label>
+          <input
+            type="checkbox"
+            id="sustentabilidade"
+            name="mission-values"
+            value="sustentabilidade"
+          />
+          <label for="sustentabilidade"> Sustentabilidade</label>
+          <input
+            type="checkbox"
+            id="responsabilidade"
+            name="mission-values"
+            value="responsabilidade"
+          />
+          <label for="responsabilidade"> Responsabilidade</label>
+          <input
+            type="checkbox"
+            id="ética"
+            name="mission-values"
+            value="ética"
+          />
+          <label for="ética"> Ética</label>
+          <input
+            type="checkbox"
+            id="comprometimento"
+            name="mission-values"
+            value="comprometimento"
+          />
+          <label for="comprometimento"> Comprometimento</label>
+          <input
+            type="checkbox"
+            id="transparência"
+            name="mission-values"
+            value="transparência"
+          />
+          <label for="transparência"> Transparência</label>
+          <input
+            type="checkbox"
+            id="respeito"
+            name="mission-values"
+            value="respeito"
+          />
+          <label for="respeito"> Respeito</label>
+          <input
+            type="checkbox"
+            id="criatividade"
+            name="mission-values"
+            value="criatividade"
+          />
+          <label for="criatividade"> Criatividade</label>
+          <input
+            type="checkbox"
+            id="empatia"
+            name="mission-values"
+            value="empatia"
+          />
+          <label for="empatia"> Empatia</label>
+          <input
+            type="checkbox"
+            id="outro"
+            name="mission-values"
+            value="outro"
+          />
+          <label for="outro"> Outro</label>
+
+          <input
+            type="text"
+            id="mission-values-other"
+            name="mission-values-other"
+            placeholder="Por favor, especifique"
+          />
+        </div>
+
+        <div class="question">
+          <label>3 - Quais são os principais produtos ou serviços que sua
+            empresa oferece?</label>
+          <input
+            type="text"
+            id="main-products-services"
+            name="main-products-services"
+          />
+        </div>
+
+        <div class="question">
+          <label>4 - Quem é o seu público-alvo principal?</label>
+          <input type="text" id="target-audience" name="target-audience" />
+        </div>
+
+        <div class="question">
+          <label>5 - Quais são os atributos que você gostaria que a sua marca
+            transmitisse aos clientes?</label>
+          <input type="text" id="brand-attributes" name="brand-attributes" />
+        </div>
+
+        <div class="question">
+          <label>6 - Você possui alguma preferência de cor ou estilo para a
+            logo?</label>
+          <input
+            type="text"
+            id="logo-color-preference"
+            name="logo-color-preference"
+          />
+        </div>
+
+        <div class="question">
+          <label style="font-weight: bolder;">7 - Qual é o seu PRODUTO/SERVIÇO
+            favorito, que você ama trabalhar e entregar para seus clientes?</label>
+          <input
+            type="text"
+            id="logo-color-preference"
+            name="logo-color-preference"
+            placeholder="Ex.: Amo trabalhar com o produto tal, é o mais pedido"
+          />
+        </div>
+
+        <div class="question">
+          <label>8 - Você tem alguma preferência quanto ao tipo de fonte ou
+            estilo tipográfico a ser usado na logo?</label>
+          <input
+            type="text"
+            id="logo-font-preference"
+            name="logo-font-preference"
+            placeholder="Ex.:Gosto de fontes mais estilzadas, cursivas. Mas apreciso as compactaS"
+          />
+        </div>
+
+        <div class="question">
+          <label>9 - Há alguma logo de outras empresas em qualquer setor que
+            você admira ou que gostaria de tomar como referência?</label>
+          <input
+            type="text"
+            id="logo-reference"
+            name="logo-reference"
+            placeholder="Ex.: Eu acho a logo da Apple sofisticada e minimalista"
+          />
+        </div>
+
+        <div class="question">
+          <label>10 - Existe mais alguma informação adicional ou detalhe
+            específico que você gostaria de incluir no design da logo?</label>
+          <textarea
+            id="additional-info"
+            name="additional-info"
+            rows="4"
+          ></textarea>
+        </div>
+
+        <button class="submit-button" type="submit">Enviar</button>
+      </form>
+
+    </div>
+
+  </body>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () { var form =
+    document.querySelector('form'); form.addEventListener('submit', function
+    (event) { event.preventDefault(); // Prevenir o formulário de ser enviado
+    pelo navegador var formData = { '1 - Nome da Empresa ou Marca':
+    document.getElementById('company-name').value, '2 - Missão e Valores':
+    Array.from(document.querySelectorAll('input[name="mission-values"]:checked')).map(function
+    (el) { return el.value; }), '3 - Principais Produtos ou Serviços':
+    document.getElementById('main-products-services').value, '4 - Público-Alvo':
+    document.getElementById('target-audience').value, '5 - Atributos da Marca':
+    document.getElementById('brand-attributes').value, '6 - Preferência de Cor
+    ou Estilo para a Logo':
+    document.getElementById('logo-color-preference').value, '7 - Produto/Serviço
+    Favorito': document.getElementById('logo-color-preference').value, '8 -
+    Preferência de Fonte ou Estilo Tipográfico para a Logo':
+    document.getElementById('logo-font-preference').value, '9 - Logo de
+    Referência de Outras Empresas':
+    document.getElementById('logo-reference').value, '10 - Informações
+    Adicionais ou Detalhes Específicos':
+    document.getElementById('additional-info').value }; // Adicionar o valor
+    "Outro" se ele existe var otherValue =
+    document.getElementById('mission-values-other').value.trim(); if
+    (otherValue) { formData['2 - Missão e Valores'].push('Outro: ' +
+    otherValue); } // Formatar e exibir as informações no console com quebras de
+    linha var formattedData = ''; for (var question in formData) { formattedData
+    += question + ': ' + JSON.stringify(formData[question], null, 4) + '\\n'; }
+    console.log('Respostas do Questionário de Desenvolvimento de Marca: \n{ ' +
+    formattedData.slice(0, -1) + ' }'); var emailBody = ''; for (var question in
+    formData) { emailBody += question + ': ' +
+    JSON.stringify(formData[question], null, 4) + '\n'; } // Configurações para
+    enviar o e-mail Email.send({ SecureToken:
+    "2261204c-e4fb-4b09-917e-f9e4eae677b1", To: "felipejsf7@gmail.com", From:
+    "felipejsf7@gmail.com", Subject: "This is the subject", Body: "And this is
+    the body" }).then( message => alert(message) ); }); });
+  </script>
+
+</html>
