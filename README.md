@@ -27,7 +27,7 @@ Este projeto é um site criado para facilitar a coleta de briefings de clientes.
 ### Como Usar:
 1. **Clonar o Repositório:**
    ```sh
-   git clone https://github.com/seu-usuario/cliente-briefing-site.git
+   git clone https://github.com/fe.lipesj/cliente-briefing-site.git
    cd cliente-briefing-site
    ```
 
