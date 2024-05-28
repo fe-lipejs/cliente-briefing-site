@@ -1,44 +1,67 @@
-# This is my Brifieng Client Form!
+### Descrição do Projeto
 
-This project includes a Node.js server script and a web page that connects to it. The front-end page presents a form the visitor can use to submit a color name, sending the submitted value to the back-end API running on the server. The server returns info to the page that allows it to update the display with the chosen color. 🎨
+**Nome do Repositório:** cliente-briefing-site
 
-[Node.js](https://nodejs.org/en/about/) is a popular runtime that lets you run server-side JavaScript. This project uses the [Fastify](https://www.fastify.io/) framework and explores basic templating with [Handlebars](https://handlebarsjs.com/).
+### Visualização do Projeto
+Você pode visualizar o projeto em funcionamento através do link abaixo:
+- [Visualizar Projeto](https://gleaming-slime-minotaurasaurus.glitch.me/)
 
-_Last updated: 14 August 2023_
+**Descrição:**
+Este projeto é um site criado para facilitar a coleta de briefings de clientes. Ele inclui um formulário onde os clientes podem fornecer informações detalhadas sobre seus projetos. Após o envio do formulário, os clientes são direcionados para uma página de recepção que confirma o recebimento das informações e fornece feedback adicional. Este site é útil para agências de marketing, designers, desenvolvedores e qualquer outro profissional que precise coletar dados estruturados de clientes para iniciar um projeto.
 
-## Prerequisites
+### Funcionalidades:
+- **Formulário de Briefing:**
+  - Campos personalizados para coletar informações específicas dos clientes.
+  - Validação de entrada para garantir a precisão dos dados.
 
-You'll get best use out of this project if you're familiar with basic JavaScript. If you've written JavaScript for client-side web pages this is a little different because it uses server-side JS, but the syntax is the same!
+- **Página de Recepção:**
+  - Mensagem de confirmação personalizada agradecendo o envio do briefing.
+  - Informações adicionais ou próximas etapas do processo.
 
-## What's in this project?
+### Tecnologias Utilizadas:
+- **HTML5** e **CSS3** para estruturação e estilização do site.
+- **JavaScript** para validação e envio do formulário.
+- **Node.js** para backend.
+- **Glitch** para hospedagem e implantação contínua do site.
 
-← `README.md`: That’s this file, where you can tell people what your cool website does and how you built it.
+### Como Usar:
+1. **Clonar o Repositório:**
+   ```sh
+   git clone https://github.com/seu-usuario/cliente-briefing-site.git
+   cd cliente-briefing-site
+   ```
 
-← `public/style.css`: The styling rules for the pages in your site.
+2. **Abrir o Projeto:**
+   - Abra o arquivo `index.html` em um navegador para visualizar o formulário de briefing.
+   - Preencha o formulário com as informações solicitadas e envie.
 
-← `server.js`: The **Node.js** server script for your new site. The JavaScript defines the endpoints in the site back-end, one to return the homepage and one to update with the submitted color. Each one sends data to a Handlebars template which builds these parameter values into the web page the visitor sees.
+3. **Página de Recepção:**
+   - Após o envio, você será redirecionado para uma página de recepção que confirma o recebimento das informações.
 
-← `package.json`: The NPM packages for your project's dependencies.
+### Estrutura do Projeto:
+- `index.html` - Página principal com o formulário de briefing.
+- `recepcao.html` - Página de recepção após o envio do formulário.
+- `styles/` - Diretório contendo os arquivos CSS.
+- `scripts/` - Diretório contendo os arquivos JavaScript.
 
-← `src/`: This folder holds the site template along with some basic data files.
+### Como Contribuir:
+- Faça um fork deste repositório.
+- Crie uma nova branch (`git checkout -b feature/nova-funcionalidade`).
+- Faça suas alterações e commit (`git commit -am 'Adiciona nova funcionalidade'`).
+- Envie para a branch (`git push origin feature/nova-funcionalidade`).
+- Abra um Pull Request.
 
-← `src/pages/index.hbs`: This is the main page template for your site. The template receives parameters from the server script, which it includes in the page HTML. The page sends the user submitted color value in the body of a request, or as a query parameter to choose a random color.
+### Licença:
+Este projeto está licenciado sob a licença MIT - veja o arquivo `LICENSE` para mais detalhes.
 
-← `src/colors.json`: A collection of CSS color names. We use this in the server script to pick a random color, and to match searches against color names.
+---
 
-← `src/seo.json`: When you're ready to share your new site or add a custom domain, change SEO/meta settings in here.
+### Exemplos de Uso:
+- Agências de publicidade coletando briefings de campanhas.
+- Designers gráficos recebendo informações detalhadas de clientes.
+- Desenvolvedores web capturando requisitos de projetos.
 
-## Try this next 🏗️
+### Contato:
+Para quaisquer dúvidas ou sugestões, entre em contato através do e-mail: felipejsf7@gmail.com
 
-Take a look in `TODO.md` for next steps you can try out in your new site!
-
-___Want a minimal version of this project to build your own Node.js app? Check out [Blank Node](https://glitch.com/edit/#!/remix/glitch-blank-node)!___
-
-![Glitch](https://cdn.glitch.com/a9975ea6-8949-4bab-addb-8a95021dc2da%2FLogo_Color.svg?v=1602781328576)
-
-## You built this with Glitch!
-
-[Glitch](https://glitch.com) is a friendly community where millions of people come together to build web apps and websites.
-
-- Need more help? [Check out our Help Center](https://help.glitch.com/) for answers to any common questions.
-- Ready to make it official? [Become a paid Glitch member](https://glitch.com/pricing) to boost your app with private sharing, more storage and memory, domains and more.
+---
